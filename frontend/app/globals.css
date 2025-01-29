@@ -44,15 +44,15 @@
   --color-primary-steel-blue-text: #04518c;
 }
 
-/* @media (prefers-color-scheme) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --foreground: 'var(--color-white)';
-    --background: 'var(--color-white)';
+    --foreground: var(--color-white);
+    --background: var(--color-primary-black);
   }
-} */
+}
 
 body {
   color: var(--color-white);
-  background: var(--background);
+  background: var(--color-white);
   font-family: Arial, Helvetica, sans-serif;
 }

@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--color-primary-steel-blue)',
+        primary: 'var(--color-steel-blue-s02)',
         secondary: 'var(--color-primary-light-sea-green)',
         background: 'var(--color-white)',
         text: 'var(--color-main-text)',
@@ -20,7 +20,14 @@ export default {
         heading: ['Poppins', 'sans-serif'],
         body: ['Roboto', 'sans-serif'],
       },
+      spacing: {
+        'std': '16px', // Define a standard padding value
+        'std-md': '24px',
+        'std-lg': '32px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };

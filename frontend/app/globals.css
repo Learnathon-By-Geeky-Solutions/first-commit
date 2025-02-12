@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Improve text visibility */
+body {
+  @apply bg-background text-text;
+}
+
+/* Improve input styling */
+input, select {
+  @apply border border-gray-300 rounded-lg px-3 py-2 w-full;
+}
+
+input:focus, select:focus {
+  @apply outline-none border-primary ring-2 ring-primary/50;
+}
+
+@keyframes slow-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-slow-bounce {
+  animation: slow-bounce 2.5s infinite ease-in-out; /* Slower bounce */
+}

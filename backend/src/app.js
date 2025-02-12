@@ -1,8 +1,11 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose"
+import connectDB from './config/db.js';
 
 const app = express();
+// Connect to MongoDB
+connectDB();
 
 // Middleware
 app.use(express.json());

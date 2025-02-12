@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 export default {
@@ -10,18 +9,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--color-steel-blue-s02)',
-        secondary: 'var(--color-primary-light-sea-green)',
-        background: 'var(--color-white)',
-        text: 'var(--color-main-text)',
+        primary: {
+          DEFAULT: 'rgb(var(--color-steel-blue-s02) / <alpha-value>)',
+          50: 'rgb(var(--color-steel-blue-s02) / 0.5)', // Manually define shades
+        },
+        secondary: 'rgb(var(--color-primary-light-sea-green) / <alpha-value>)',
+        background: 'rgb(var(--color-white) / <alpha-value>)',
+        text: 'rgb(var(--color-main-text) / <alpha-value>)',
       },
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans], // Use Inter as default sans-serif
+        sans: ['Inter', ...fontFamily.sans],
         heading: ['Poppins', 'sans-serif'],
         body: ['Roboto', 'sans-serif'],
       },
       spacing: {
-        'std': '16px', // Define a standard padding value
+        'std': '16px',
         'std-md': '24px',
         'std-lg': '32px',
       },

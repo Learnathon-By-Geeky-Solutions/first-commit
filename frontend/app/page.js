@@ -5,6 +5,7 @@ import SearchBar from "./components/SearchBar";
 import FeaturedSection from "./components/FeaturedSection";
 import Footer from "./components/Footer";
 import featuredItems from "./components/data/featuredData";
+import TestimonialSlider from "./components/Testimonials";
 
 export default function Home() {
     return (
@@ -17,6 +18,8 @@ export default function Home() {
 
             {/* Featured Doctors & Hospitals */}
             <FeaturedSection title="Featured Doctors & Hospitals" items={featuredItems} />
+
+            <TestimonialSlider />
 
             {/* Footer */}
             <Footer />

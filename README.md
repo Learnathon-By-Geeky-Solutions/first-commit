@@ -5,6 +5,8 @@
 - [Mentor](#mentor)
 - [Project Description](#project-description)
     - [Features](#features)
+    - [Flow Diagram](#flow-diagram)
+    - [Page Documentations](#page-documentation)
 
 ## Team Members
 - Tanzimbn (Team Leader)
@@ -45,6 +47,11 @@ DocNest is a user-friendly platform designed to connect patients with doctors an
 #### 8. **Admin Features**
    - **Doctor Admin**: Manage doctor profiles and schedules
    - **Hospital Admin**: Invite doctors, manage schedules, and hospital details
+
+### Flow Diagram
+![Flow Diagram](doc/flow.png)
+### Page Documentation
+[pages.md](doc/pages.md)
 
 ## Getting Started
 1. Clone the repository
